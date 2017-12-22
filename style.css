@@ -1,0 +1,22 @@
+body {
+    background-color: #4E4E56;
+    margin:  0px;
+    padding: 0px;
+    /*animation: 601ms linear 0s infinite alternate-reverse fadeIn;*/
+}
+  
+@keyframes move_eye {
+    from { margin-left: -20%; } 
+    to { margin-left: 100%; }  
+}
+@keyframes fadeIn {
+    from { opacity: 0;}
+        to { opacity: 100%;}
+}
+
+.content {
+    display:inline-block;
+    height:200px;
+    width: 200px;
+    
+}
