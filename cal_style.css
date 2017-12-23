@@ -4,34 +4,70 @@
 
 .printable {
   display:block;
+ 
 }
   
 @media print {
   .non-printable {
     display:none;
   }
+  
+  .section {
+    page-break-after: always; 
+  }
+
   .printable {
-    background-color:red;
+    
   }
 }
 
 table {
-  border-collapse: collapse;  
+  border-collapse: collapse;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 30px;
 }  
     
-table, th, td {
-  margin:20px;
-  padding:20px;
+td {
+  margin:30px;
+  padding:27px;
+  padding-bottom: 47px;
+  
+}
+
+tr:nth-child(3) , td:nth-child(3){
+  
 }
   
 .simpleCal {
-   
+  display:inline-block;
+  padding:0;
 }
-  
+
+html{
+  height:297mm;
+  width:210mm;
+  margin:0;
+  padding:0;
+}
+
 body {
-  display:block;
-  border-style:solid;
-  border-width:1px;
+  height:297mm;
+  width:210mm;
+  margin:0;
+  padding:0;
   text-align:center;
-  width:100%;
+  
+}
+
+.simpleCalHead {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 60px;
+}
+
+.dayNames {
+  font-family: 'Marck Script', cursive;
+  font-size: 40px;
+  padding-bottom:0px;
+  
+  box-shadow: 0px -5px 0px -1px black;
 }
