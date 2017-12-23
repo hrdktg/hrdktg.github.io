@@ -1,0 +1,37 @@
+@page {
+  size:A4;
+}
+
+.printable {
+  display:block;
+}
+  
+@media print {
+  .non-printable {
+    display:none;
+  }
+  .printable {
+    background-color:red;
+  }
+}
+
+table {
+  border-collapse: collapse;  
+}  
+    
+table, th, td {
+  margin:20px;
+  padding:20px;
+}
+  
+.simpleCal {
+   
+}
+  
+body {
+  display:block;
+  border-style:solid;
+  border-width:1px;
+  text-align:center;
+  width:100%;
+}
