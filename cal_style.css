@@ -34,8 +34,8 @@ td {
   
 }
 
-tr:nth-child(3) , td:nth-child(3){
-  
+td:nth-child(1){
+  color:grey;
 }
   
 .simpleCal {

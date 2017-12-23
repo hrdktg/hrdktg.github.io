@@ -1,4 +1,21 @@
-
+function makeCal(yr) {
+  for(var x=1;x<=12;x++) {
+    var calBody=document.createElement('div');
+    var calHead=document.createElement('div');
+    var nid="cal"+x;
+    calBody.setAttribute('id',nid);
+    calHead.setAttribute('id',"h"+nid);
+    calBody.setAttribute('class',"simpleCal printable section");
+    calHead.setAttribute('class',"simpleCalHead printable")
+    var par=document.getElementById("bod");
+    par.appendChild(calHead);
+    par.appendChild(calBody);
+    
+    var res=getCal(x,yr);
+    calHead.innerHTML=res[0];
+    calBody.innerHTML=res[1];
+  }
+}
 
 function getCal(m,yr) {
     var fDate=new Date(m+' 1 , '+yr);
@@ -14,11 +31,7 @@ function getCal(m,yr) {
         febDays=29;
     }
       
-    var divCal=document.getElementById("cal");
-    var divCal2=document.getElementById("cal2");
-    divCal.innerHTML=cDate+"/"+cMonth+" "+febDays;
-    divCal2.innerHTML=cDate+"/"+cMonth+" "+febDays;
-    
+    var divCal="";
     
     var monthn = ["January","February","March","April","May","June","July","August","September","October","November", "December"];
     
@@ -28,8 +41,6 @@ function getCal(m,yr) {
     
     var fDate=new Date(cMonth+1+' 1 , '+cYear);
     var monthStarts=fDate.getDay();
-    divCal.innerHTML=dayn[monthStarts];
-    divCal.innerHTML=dayn[monthStarts];
     
     var calTable="\t<tr>\n";
     //Insert Day Names at the top
@@ -62,12 +73,7 @@ function getCal(m,yr) {
     var calBody="<table class='calendar'>";
     calBody+=calTable;
     calBody+="</table";
-      
-    divCal.innerHTML=calBody;
-    divCal2.innerHTML=calBody;
 
-    var CalHead=document.getElementById("calHead");
-    var CalHead2=document.getElementById("calHead2");
-    calHead.innerHTML="<h2>"+monthn[cMonth]+"</h2>";
-    calHead2.innerHTML="<h2>"+monthn[cMonth]+"</h2>";
+    divCal=monthn[cMonth]+" "+cYear;
+    return [divCal,calBody];
   }
