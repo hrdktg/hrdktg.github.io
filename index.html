@@ -1,30 +1,16 @@
+<!DOCTYPE html>
 <html>
-    <head>
-      <title>
-      </title>
-      <script src="cal_js.js"></script>
-      <link rel="stylesheet" href="cal_style.css">
-      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"> 
-      <link href="https://fonts.googleapis.com/css?family=Clicker+Script|Euphoria+Script|Kaushan+Script|Marck+Script" rel="stylesheet"> 
-    </head>
-    
-    <body id="bod" onload="makeCal(2018)">
-      <div id="calHead" class="simpleCalHead printable">
-          <!--Print Header for the Calendar -->
-      </div>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+</head>
 
-      <div id="cal" class="simpleCal printable section">
-          <!--Print Calendar-->
-      </div>
-      
-      <div id="calHead2" class="simpleCalHead printable">
-          <!--Print Header for the Calendar -->
-      </div>
-
-      <div id="cal2" class="simpleCal printable">
-          <!--Print Calendar-->
-      </div>
-
-    </body>
-  </html>
-      
+<body onload=checkState()>
+  <div id="wcLoader">
+    <div id="wcTxt"> </div>
+  </div>
+  
+  <div id="txt">
+  </div>
+</body>
