@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="loader.js"> </script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+</head>
+
+<body onload=checkState()>
+  <div id="wcLoader">
+    <div id="wcTxt"> </div>
+  </div>
+  
+  <div id="txt">
+  </div>
+</body>

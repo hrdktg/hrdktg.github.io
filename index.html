@@ -1,18 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="text/javascript" src="loader.js"> </script>
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-</head>
+    <head>
+        <title>
+            Shoujiki - Leave Anonymouse Messages
+        </title>
 
-<body onload=checkState()>
-  <div id="wcLoader">
-    <div id="wcTxt"> </div>
-  </div>
-  
-  <div id="txt">
-  </div>
-</body>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+        <!--
+        <link rel="stylesheet" type="text/css" media="screen" href="skeleton.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="normalize.css"/>
+        -->
+        <link rel="stylesheet" type="text/css" media="screen" href="bulma.css"/>
+    </head>
+
+    <body>
+        <div class="notification has-text-centered" id="loader">
+            <h3 class="title">Criticism Overload</h3>
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+            <h3 class="subtitle">Please wait 10 sec...</h3>
+            <p>Server is limited to 2 posts per 10 sec..</p>
+        </div>
+
+        <div class="container">
+        
+            <h1 class="title is-1 has-text-centered">Leave Anonymous Messages for</h1>
+            <h1 class="subtitle is-1 has-text-centered">Hardik Tyagi</h1>
+
+            <div class="box" id="main-content">
+                <form id="form">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <div class="control">
+                            <input name="name" class="input" type="text" placeholder="Name" value="Anonymous">
+                        </div>
+                    </div>
+                    
+                    <div class="field">
+                        <label for="msg">Message</label>
+                        <div class="control">
+                            <textarea class="input is-primary" type="text" id="msg" name="msg"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button type="submit" class="button is-primary">
+                                <span class="icon is-small">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <span>
+                                    Send
+                                </span>
+                            </button>
+                        </div>
+                        <div class="control">
+                            <button type="reset" class="button is-light">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="tile is-ancestor is-vertical" id="msgList">
+
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
