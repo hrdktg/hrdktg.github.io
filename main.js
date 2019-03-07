@@ -70,7 +70,7 @@ function removeMsgBox() {
     msgBox.classList.add("elemFadeOut");
     setTimeout(()=>{
         msgBox.style.display="none";
-    }, 2500);
+    }, 3000);
 }
 
 function showMsg(val) {
@@ -80,5 +80,5 @@ function showMsg(val) {
     tyMsg.textContent = "Thank you "+val.name+" for your message !!";
     yourMsg.textContent = "Message - "+val.content;
 
-    setTimeout(removeMsgBox, 5000);
+    setTimeout(removeMsgBox, 3000);
 }

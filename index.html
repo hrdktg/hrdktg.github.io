@@ -15,9 +15,46 @@
     </head>
 
     <body>
-        <div class="notification is-success" id="msgBox" >
-            <h3 class="title is-3" id="tyMsg">Thank you for your message !!</h3>
-            <h3 class="subtitle is-4" id="yourMsg">Message - </h3>
+        <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="http://hrdktg.github.io">
+                <h1><strong>hardiktyagi.me</strong></h1>
+                </a>
+            </div>
+            
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                <a class="navbar-item has-text-link">
+                    <strong>Home</strong>
+                </a>
+            
+                <a class="navbar-item has-text-link">
+                    <strong>My Projects</strong>
+                </a>
+
+                <a class="navbar-item has-text-link">
+                    <strong>My Blog</strong>
+                </a>
+                </div>
+            
+                <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Github</strong>
+                        </a>
+                        <a class="button is-info">
+                            <strong>Twitter</strong>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="notification is-light box" id="msgBox">
+                <h1 class="title" id="tyMsg">Thank you for your message !!</h1>
+                <h2 class="subtitle" id="yourMsg">Message - </h2>
         </div>
 
         <div class="notification has-text-centered" id="loader">
@@ -33,10 +70,27 @@
             <p>Server is limited to 2 posts per 10 sec..</p>
         </div>
 
-        <div class="container">
         
-            <h1 class="title is-1 has-text-centered">Leave Anonymous Messages for</h1>
-            <h1 class="subtitle is-1 has-text-centered">Hardik Tyagi</h1>
+        <div class="container">
+            <div class="is-fullwidth">
+                <h1 class="title is-1 has-text-centered">Leave Anonymous Messages for</h1>
+                <h1 class="subtitle is-1 has-text-centered">Hardik Tyagi</h1>
+            </div>
+            
+            </br>
+            <article class="message is-warning">
+                    <div class="message-body">
+                        <p>
+                            Books, Games, movies or anime recommendation?
+                        </p>
+                        <p>
+                            Or just want to give me a piece of your mind?
+                        </p>
+                        <p>
+                            Send me anything.... :)
+                        </p>
+                    </div>
+            </article>
 
             <div class="box" id="main-content">
                 <form id="form">
@@ -75,13 +129,20 @@
             <article class="message is-info">
                 <div class="message-body">
                     <p>
-                        You messages will be completely Anonymous and 
+                        Your messages will be completely Anonymous and 
                         can be read only by the owner of this site.
                     </p>
                 </div>
             </article>
             
             </div>
+        </div>
+
+        <div class="notification has-text-centered is-fullwidth" id="bottomf">
+            <p>
+                <strong>Shoujiki</strong> made with ❤ by <a href="https://hrdktg.github.io">Hardik Tyagi</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+            </p>
         </div>
 
         <script src="main.js"></script>
