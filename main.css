@@ -50,3 +50,33 @@
       -webkit-transform: scaleY(1.0);
     }
   }
+
+.elemFadeIn {
+  -webkit-animation: fadein 2s linear forwards;
+  animation: fadein 2s linear forwards;
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.elemFadeOut {
+  -webkit-animation: fadeout 2s linear forwards;
+  animation: fadeout 2s linear forwards;
+}
+
+@-webkit-keyframes fadeout {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
