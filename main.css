@@ -1,89 +1,68 @@
-.spinner {
-    margin: 100px auto;
-    width: 50px;
-    height: 40px;
-    text-align: center;
-    font-size: 10px;
-  }
-  
-  .spinner > div {
-    background-color: #333;
-    height: 100%;
-    width: 6px;
-    display: inline-block;
-    
-    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
-    animation: sk-stretchdelay 1.2s infinite ease-in-out;
-  }
-  
-  .spinner .rect2 {
-    -webkit-animation-delay: -1.1s;
-    animation-delay: -1.1s;
-  }
-  
-  .spinner .rect3 {
-    -webkit-animation-delay: -1.0s;
-    animation-delay: -1.0s;
-  }
-  
-  .spinner .rect4 {
-    -webkit-animation-delay: -0.9s;
-    animation-delay: -0.9s;
-  }
-  
-  .spinner .rect5 {
-    -webkit-animation-delay: -0.8s;
-    animation-delay: -0.8s;
-  }
-  
-  @-webkit-keyframes sk-stretchdelay {
-    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
-    20% { -webkit-transform: scaleY(1.0) }
-  }
-  
-  @keyframes sk-stretchdelay {
-    0%, 40%, 100% { 
-      transform: scaleY(0.4);
-      -webkit-transform: scaleY(0.4);
-    }  20% { 
-      transform: scaleY(1.0);
-      -webkit-transform: scaleY(1.0);
-    }
-  }
-
-.elemFadeIn {
-  -webkit-animation: fadein 2s linear forwards;
-  animation: fadein 2s linear forwards;
-}
-
-@-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.elemFadeOut {
-  -webkit-animation: fadeout 2s linear forwards;
-  animation: fadeout 2s linear forwards;
-}
-
-@-webkit-keyframes fadeout {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
-@keyframes fadeout {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
 #bottomf {
-  bottom:0;
-  position: fixed;
-  width: 100%;
-  margin-bottom: 0;  
+    bottom:0;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 0;  
+}
+
+:root {
+    --c0: #000000;
+    --c1: #032107;
+    --c4: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.heading {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--c4);
+    font-size: 135px;
+    font-weight: 100;
+}
+
+.subtitle {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--c4);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.middle {
+  position: absolute;
+  margin: 0;  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);    
+}
+
+.navbar li{
+    list-style-type: none;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    float: left;
+    
+    width: 15%;
+
+    border: 0px solid white;
+}
+
+.navbar li a {
+    display: block;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #ffffff;
+    border: 5px;
+    border-color: white;
+}
+
+body {
+    background-color: var(--c0);
+    color: var(--c4);
 }

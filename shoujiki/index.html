@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Shoujiki - Leave Anonymous Messages
+        </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+        <!--
+        <link rel="stylesheet" type="text/css" media="screen" href="skeleton.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="normalize.css"/>
+        -->
+        <link rel="stylesheet" type="text/css" media="screen" href="bulma.css"/>
+    </head>
+
+    <body>
+        <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="http://hrdktg.github.io">
+                <h1><strong>hardiktyagi.me</strong></h1>
+                </a>
+            </div>
+            
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                <a class="navbar-item has-text-link">
+                    <strong>Home</strong>
+                </a>
+            
+                <a class="navbar-item has-text-link">
+                    <strong>My Projects</strong>
+                </a>
+
+                <a class="navbar-item has-text-link">
+                    <strong>My Blog</strong>
+                </a>
+                </div>
+            
+                <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Github</strong>
+                        </a>
+                        <a class="button is-info">
+                            <strong>Twitter</strong>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="notification is-light box" id="msgBox">
+                <h1 class="title" id="tyMsg">Thank you for your message !!</h1>
+                <h2 class="subtitle" id="yourMsg">Message - </h2>
+        </div>
+
+        <div class="notification has-text-centered" id="loader">
+            <h3 class="title">Criticism Overload</h3>
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+            <h3 class="subtitle">Please wait 10 sec...</h3>
+            <p>Server is limited to 2 posts per 10 sec..</p>
+        </div>
+
+        
+        <div class="container">
+            <div class="is-fullwidth">
+                <h1 class="title is-1 has-text-centered">Leave Anonymous Messages for</h1>
+                <h1 class="subtitle is-1 has-text-centered">Hardik Tyagi</h1>
+            </div>
+            
+            </br>
+            <article class="message is-warning">
+                    <div class="message-body">
+                        <p>
+                            Books, Games, movies or anime recommendation?
+                        </p>
+                        <p>
+                            Or just want to give me a piece of your mind?
+                        </p>
+                        <p>
+                            Send me anything.... :)
+                        </p>
+                    </div>
+            </article>
+
+            <div class="box" id="main-content">
+                <form id="form">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <div class="control">
+                            <input name="name" class="input" type="text" placeholder="Name" value="Anonymous">
+                        </div>
+                    </div>
+                    
+                    <div class="field">
+                        <label for="msg">Message</label>
+                        <div class="control">
+                            <textarea class="input is-primary" type="text" id="msg" name="msg"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button type="submit" class="button is-primary">
+                                <span class="icon is-small">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <span>
+                                    Send
+                                </span>
+                            </button>
+                        </div>
+                        <div class="control">
+                            <button type="reset" class="button is-light">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <article class="message is-info">
+                <div class="message-body">
+                    <p>
+                        Your messages will be completely Anonymous and 
+                        can be read only by the owner of this site.
+                    </p>
+                </div>
+            </article>
+            
+            </div>
+        </div>
+
+        <div class="notification has-text-centered is-fullwidth" id="bottomf">
+            <p>
+                <strong>Shoujiki</strong> made with ❤ by <a href="https://hrdktg.github.io">Hardik Tyagi</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+            </p>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
