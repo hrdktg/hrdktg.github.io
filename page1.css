@@ -1,0 +1,41 @@
+body {
+    background: url("imgs/bg1.jpg");
+    
+    background: #000000;
+
+    padding: 50px;
+    overflow: hidden;
+   opacity: 1;
+  }
+  body * {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+  body .text-wrap {
+    margin: 0;
+    position: relative;
+    width: 100%;
+  }
+
+
+@font-face {
+    font-family: beyondWonderland;
+    /* f6,  */
+    src:url("font6.ttf");
+}
+
+  body .text-wrap svg {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    font: 40px sans-serif;
+    font-family: 'beyondWonderland';
+    text-transform: uppercase;
+  }
+  body .text-wrap svg .img-layer {
+    fill: url(#p-img);
+  }
+  body .text-wrap svg .gradient-layer {
+    fill: url(#gr-overlay);
+  }

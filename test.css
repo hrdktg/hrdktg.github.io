@@ -1,0 +1,30 @@
+body {
+    background: #A7AAA4;
+
+
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.mainbody {
+    color: #9899A6;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+#part1 {
+    background: #3C3C3C;
+  
+    float:left;
+    height:100%;
+    width: 50%;
+}
+
+#part2 {
+    background: #087E8B;
+
+    float:right;
+    height:100%;
+    width: 50%;
+}

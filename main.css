@@ -17,8 +17,13 @@
     margin: auto;
 }
 
+@font-face {
+    font-family: beyondWonderland;
+    src:url("beyond_wonderland.ttf");
+}
+
 .heading {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'beyondWonderland';
     color: var(--c4);
     font-size: 135px;
     font-weight: 100;
@@ -64,5 +69,27 @@
 
 body {
     background-color: var(--c0);
+    
+    background: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     color: var(--c4);
+
+    opacity: 1;
+    filter: alpha(opacity=50); /* For IE8 */
+
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
+
+.bgover {
+    background: url(bg.jpg);
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+

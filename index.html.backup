@@ -15,20 +15,17 @@
     </head>
 
     <body>
-        <div id="bgover">
-            <div class="middle">
-          
-            <img src="main_logo.png" height="310px" width="310px"></img>
-            <h1 class="heading">Hardik Tyagi</h1>
-            <nav>
-                <ul class="navbar">
-                    <li class="navbar subtitle"><a href="">My Blog</a></li>
-                    <li class="navbar subtitle"><a href="">My Projects</a></li>
-                    <li class="navbar subtitle"><a href="">About Me</a></li>
-                    <li class="navbar subtitle"><a href="">Under Construction...</a></li>
-                </ul>
-            </nav>
-            </div>
+
+        <div class="middle">
+        <h1 class="heading">Hardik Tyagi</h1>
+        <nav>
+            <ul class="navbar">
+                <li class="navbar subtitle"><a href="">My Blog</a></li>
+                <li class="navbar subtitle"><a href="">My Projects</a></li>
+                <li class="navbar subtitle"><a href="">About Me</a></li>
+                <li class="navbar subtitle"><a href="">Under Construction...</a></li>
+            </ul>
+        </nav>
         </div>
         <script src="main.js"></script>
     </body>
