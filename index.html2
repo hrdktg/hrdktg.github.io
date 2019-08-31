@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Shoujiki - Leave Anonymous Messages
+        </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--
+        <link rel="stylesheet" type="text/css" media="screen" href="skeleton.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="normalize.css"/>         
+        -->
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,400" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="bgover">
+            <div class="middle">
+          
+            <img src="main_logo.png" height="310px" width="310px"></img>
+            <h1 class="heading">Hardik Tyagi</h1>
+            <nav>
+                <ul class="navbar">
+                    <li class="navbar subtitle"><a href="">My Blog</a></li>
+                    <li class="navbar subtitle"><a href="">My Projects</a></li>
+                    <li class="navbar subtitle"><a href="">About Me</a></li>
+                    <li class="navbar subtitle"><a href="">Under Construction...</a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

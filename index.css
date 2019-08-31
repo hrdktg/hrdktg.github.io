@@ -1,0 +1,116 @@
+
+  h1, .alpha {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1;
+    letter-spacing: -.02em;
+    padding-bottom: 0.4em;
+  }
+  
+  h2, .beta {
+    margin-bottom: .75rem;
+  
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+  
+  @media (min-width: 650px) {
+    .mega {
+      font-size: 6.2rem;
+      line-height: 1;
+    }
+  }
+  
+  .subhead {
+    color: #7b8993;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    animation: hue 2s infinite linear;
+  }
+  
+    a:hover {
+      color: #f5430c;
+      background: #F7EDE2;
+    }
+
+    .icon-bar {
+      padding-top: 2em;
+    }
+
+    .icon-bar  a {
+      text-align: center;
+      width: 15%;
+      margin: 5px;
+      padding: 15px;
+
+      border-width: 1.1px;
+      border-radius: 10px;
+      border-color: #3d464d;
+      border-style: outset;
+    }
+
+  html {
+    font-family: 'Indie Flower', cursive;
+    color: #3d464d;
+    background-color: #F7EDE2;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+  
+    overflow: hidden-x;
+  
+    text-align: center;
+  }
+  
+  @media (min-width: 650px) {
+    html {
+      height: 100%;
+    }
+  
+    html:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+  
+    body {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 38rem;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .mega {
+      font-size: 5em;
+    }
+
+    .subhead {
+      font-size: 1.2em;
+    }
+
+  }
+  
+    .site__title {
+        color: #f35626;
+        background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
+        -webkit-background-clip: text;
+              background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: hue 25s infinite linear;
+    }
+  
+  @keyframes hue {
+    from {
+      filter: hue-rotate(0deg);
+    }
+    
+    to {
+      filter: hue-rotate(-360deg);
+    }
+  }
